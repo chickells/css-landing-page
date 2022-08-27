@@ -1,14 +1,23 @@
 body {
     min-height: 100vh;
-    min-width: 100vh;
+    /* min-width: 100vh; */
+    /* max-width: 1000px; */
     margin: 0px;
     padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    /* gap: 16px; */
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .header {
@@ -17,31 +26,99 @@ body {
     margin: 0px;
     padding: 16px;
     padding-top: 8px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.links {
+.hero {
+    background-color: #1F2937;
+    /* min-width: 100vh; */
+    margin: 0px;
+    padding: 16px;
+    padding-bottom: 75px;
     display: flex;
+    justify-content: space-between;
     gap: 16px;
 }
 
+.heroheader {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.herotext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.heroleft {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.herobutton .button{
+    /*  HOW TF DO I CHANGE PADDING/SIZE ON BUTTON */
+    background-color: #3882f6;
+}
+
+.heroleft, .heroright {
+    flex: 1;
+    padding: 16px;
+}
+
+.heroright {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
 .header .logo {
+    flex: 1;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 1000;
     color: #f9faf8;
     padding: 16px;
     padding-top: 8px;
 }
 
-.container {
-    flex: auto;
+.middle {
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.main:nth-last-child() {
+    align-self: flex-end;
+}
+
+/* HOW TF DO YOU GET THIS FUCKING FOOTER TO GO TO THE BOTTOM */
+
+.footer {
+    background-color: #1F2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin: 0px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
 }

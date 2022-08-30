@@ -17,8 +17,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
+
+
 
 .header {
     background-color: #1F2937;
@@ -91,6 +93,77 @@ body {
     color: #f9faf8;
     padding: 16px;
     padding-top: 8px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cardtitle {
+    display: flex;
+    color: #1F2937;
+    font-size: 32px;
+    font-weight: 990;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 175px;
+}
+
+.blockimg {
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #3882f6;
+}
+
+.blocktext {
+    color: #1F2937;
+    font-size: 18px;
+    text-align: center;
+}
+
+.box, .quote, .calltoaction {
+    padding: 32px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    justify-content: center;
+    gap: 8px;
+}
+
+.quotetext {
+    color: #1F2937;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 100;
+
+}
+
+.quotesource {
+    display: flex;
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 800;
+    justify-content: flex-end;
 }
 
 .middle {

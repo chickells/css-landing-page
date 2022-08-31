@@ -20,8 +20,6 @@ body {
     justify-content: space-between;
 }
 
-
-
 .header {
     background-color: #1F2937;
     min-width: 100vh;
@@ -77,6 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
 }
 
 .links {
@@ -155,7 +154,6 @@ body {
     font-size: 32px;
     font-style: italic;
     font-weight: 100;
-
 }
 
 .quotesource {
@@ -173,9 +171,57 @@ body {
     align-items: center;
 }
 
-.main:nth-last-child() {
-    align-self: flex-end;
+.calltoaction {
+    background-color: #3882f6;
+    border-style: solid;
+    border: #3882f6;
+    border-radius: 10px;
+    margin: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 128px;
+    padding: 32px 64px;
+    color: #f9faf8;
 }
+
+.calltoaction h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.calltoaction p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #f9faf8;
+    border-width: 3px;
+    padding: 12px 36px;
+}
+
+.hero button {
+    border: none;
+}
+
+/* .main:nth-last-child() {
+    align-self: flex-end;
+} */
 
 /* HOW TF DO YOU GET THIS FUCKING FOOTER TO GO TO THE BOTTOM */
 
@@ -190,8 +236,3 @@ body {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: #e5e7eb;
-    font-size: 18px;
-}
